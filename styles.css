@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal-menu > ul > li {
+    display: inline-block;
+    position: relative;
+}
+
+.horizontal-menu > ul > li > a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.horizontal-menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.horizontal-menu ul ul li {
+    display: block;
+}
+
+.horizontal-menu ul ul li a {
+    padding: 8px 15px;
+}
+
+.horizontal-menu ul li:hover > ul {
+    display: block;
+}
